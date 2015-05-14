@@ -1,12 +1,12 @@
 # FoxNews Manifest to manage cron configuration
 #
-class cron::config {
+class fcron::config {
   file {'/etc/crontab':
     ensure => 'present',
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
-    source => 'puppet:///modules/cron/etc_crontab',
+    source => 'puppet:///modules/fcron/etc_crontab',
     notify => Service['crond'],
   }
 }

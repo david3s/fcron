@@ -1,6 +1,6 @@
 # FoxNews manifest to install Cron
 #
-class cron::install {
+class fcron::install {
   package {'cronie':
     ensure => 'installed',
   }

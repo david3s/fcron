@@ -1,6 +1,6 @@
 # FoxNews manifest to manage Cron
 #
-class cron::service {
+class fcron::service {
   service {'crond':
     ensure     => 'running',
     enable     => true,

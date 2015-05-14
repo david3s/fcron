@@ -1,6 +1,6 @@
-# == Class: cron
+# == Class: fcron
 #
-# Full description of class cron here.
+# Full description of class fcron here.
 #
 # === Parameters
 #
@@ -23,7 +23,7 @@
 #
 # === Examples
 #
-#  class { 'cron':
+#  class { 'fcron':
 #    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
 #  }
 #
@@ -35,8 +35,8 @@
 #
 # Copyright 2015 Your name here, unless otherwise noted.
 #
-class cron {
-  include cron::config
-  include cron::install
-  include cron::service
+class fcron {
+  include fcron::config
+  include fcron::install
+  include fcron::service
 }
