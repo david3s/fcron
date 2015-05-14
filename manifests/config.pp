@@ -7,5 +7,6 @@ class cron::config {
     group  => 'root',
     mode   => '0644',
     source => 'puppet:///modules/cron/etc_crontab',
+    notify => Service['crond'],
   }
 }
